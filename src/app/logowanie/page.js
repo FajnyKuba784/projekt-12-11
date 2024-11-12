@@ -1,19 +1,9 @@
-
-
-
-export default function Logowanie(){
-
-
-
-    return(
-        <div className="flex justify-center items-center">
-            <h1>Logowanie</h1>
-
-        </div>
-
-    )
-
-
-
-
+import Login from '@/components/Login';
+ 
+export default function Form() {
+  return (
+    <div className='flex justify-center items-center'>
+      <Login/>
+    </div>
+  )
 }

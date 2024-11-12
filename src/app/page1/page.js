@@ -1,24 +1,5 @@
-
-
-
-export default function Page1(){
-
-
-
-
-
-
-
-
-
-    return(
-
-        
-        <h1>MANGO</h1>   
-        
-        
-        
-        
-    )
-
-}
+export default function Home() {
+    return (
+      <h1>Strona1</h1>
+    );
+  }
