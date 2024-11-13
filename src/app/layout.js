@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Link from "next/link";
-import Awatar from "@/components/ui/awatarimg";
+import Menu from "@/components/ui/awatarimg";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,11 +25,10 @@ export default function RootLayout({ children }) {
       >
         <div className="flex flex-row justify-center items-center">
 
-
-        <Link href="/page1">strona 1</Link>
-        <Link href="/page2">strona 2</Link>
+        <Menu></Menu>
         
-        <Awatar></Awatar>
+        
+        
         </div>
         {children}
       </body>

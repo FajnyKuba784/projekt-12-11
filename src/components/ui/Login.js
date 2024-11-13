@@ -11,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import PocketBase from 'pocketbase';
-import {baseUrl} from '@/lib/constants'
+import { baseUrl } from "@/lib/constans"
 const pb = new PocketBase(baseUrl);
 import {useState,useEffect} from "react"
 export default function Login(){

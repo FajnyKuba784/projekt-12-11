@@ -16,7 +16,7 @@ import {
 import { useState } from "react";
 import PocketBase from 'pocketbase';
 import Image from "next/image";
-import { baseUrl } from "@/lib/constants";
+import { baseUrl } from "@/lib/constans";
 
 const pb = new PocketBase(baseUrl);
 export default function Menu() {
@@ -27,19 +27,23 @@ export default function Menu() {
         window.location.href='/'
     }
     const handleLogin = ()=>{
-        window.location.href='/loginForm'
+        window.location.href='/logowanie'
+    }
+    const handleustawienia = ()=>{
+        window.location.href='/ustawienia'
     }
     return (
         <div className="flex justify-between px-5 py-2">
             <div>
                 <Link href='.'>Strona1</Link>
                 <Link href='/strona2'>Strona2</Link>
+                
             </div>
             <div>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Avatar>
-                            <AvatarImage src={data && pb.files.getUrl(data,data.avatar)} alt="@shadcn"/>
+                            <AvatarImage src={data && pb.files.getUrl(data,data.avatar)} alt="@shadcn" />
                             <AvatarFallback>CN</AvatarFallback>
                         </Avatar>
                     </DropdownMenuTrigger>
@@ -51,6 +55,10 @@ export default function Menu() {
                         {data && (
 
                         <DropdownMenuLabel onClick={handleLogout}>Logout</DropdownMenuLabel>
+                        )}
+                        {data && (
+
+                        <DropdownMenuLabel onClick={handleustawienia}>Ustawienia</DropdownMenuLabel>
                         )}
                     </DropdownMenuContent>
                 </DropdownMenu>

@@ -1,4 +1,5 @@
-import Login from '@/components/Login';
+"use client";
+import Login from "@/components/ui/Login"
  
 export default function Form() {
   return (
