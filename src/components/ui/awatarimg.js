@@ -37,6 +37,7 @@ export default function Menu() {
             <div>
                 <Link href='.'>Strona1</Link>
                 <Link href='/strona2'>Strona2</Link>
+                <Link href='/chat'>Chat</Link>
                 
             </div>
             <div>
